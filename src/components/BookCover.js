@@ -2,16 +2,6 @@ import React from 'react';
 import Folder from './Folder.js';
 
 class BookCover extends React.Component {
-    expandFolder(index) {
-        const library = [];
-        this.state.library.forEach((folder, i) => {
-            const dupFolder = folder;
-            dupFolder.expand = (i === index);
-            library.push(dupFolder);
-        });
-        this.setState({ library })
-    }
-
     render() {
         return (
             <div className="bk-front">
