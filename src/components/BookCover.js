@@ -7,7 +7,7 @@ class BookCover extends React.Component {
             <div className="bk-front">
                 <div className="bk-cover">
                     <div className="options">
-                        {(!this.props.owned) ?
+                        {(!this.props.details.owned) ?
                             <>
                                 <button className="btn">
                                     <div className="metamask-icon"></div>
@@ -24,8 +24,8 @@ class BookCover extends React.Component {
                             </>}
                     </div>
                     <div className="folders">
-                        {this.props.details && this.props.details.map((folder, i) => (
-                            <Folder key={'folder' + i} onClick={() => this.expandFolder(i)} title={folder.title} content={folder.content} expand={folder.expand} />
+                        {this.props.details.info && this.props.details.info.map((folder, i) => (
+                            <Folder key={'folder' + i} onClick={() => this.props.expandFolder(i)} title={folder.title} content={folder.content} expand={folder.expand} />
                         ))}
                     </div>
                 </div>

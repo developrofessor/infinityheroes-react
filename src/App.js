@@ -8,7 +8,8 @@ class App extends React.Component {
     super();
     this.state = {
       details: {
-        owned: false
+        owned: false,
+        info: []
       },
       pages: [
         [
@@ -17,11 +18,30 @@ class App extends React.Component {
               image: require('./images/8.jpg'),
               id: 1,
               owned: true,
-              double: 'v'
+              double: 'v',
+              info: [
+                {
+                  title: 'aaaa',
+                  content: 'fdklsfjflkdsj',
+                  expand: false
+                },
+                {
+                  title: 'bbfdskof',
+                  content: 'ggggg',
+                  expand: false
+                }
+              ]
             }, {
               image: require('./images/4.jpg'),
               id: 2,
-              double: 'h'
+              double: 'h',
+              info: [
+                {
+                  title: 'ccccaaaa',
+                  content: 'fdkldddddddsfjflkdsj',
+                  expand: false
+                }
+              ]
             }, {
               id: 3
             }, { id: 4 }]
@@ -53,6 +73,29 @@ class App extends React.Component {
       ]
     };
   }
+
+  getItem(page, id) {
+    const search1 = this.state.pages[page][0].items.find(item => item.id === id);
+    const search2 = this.state.pages[page][1].items.find(item => item.id === id);
+
+    console.log('getItem', search1, search2);
+
+    if (search1)
+      return search1;
+    return search2;
+  }
+
+  expandInfo(index) {
+    const info = [];
+    console.log(this.state);
+    this.state.details.info.forEach((folder, i) => {
+      const dupFolder = folder;
+      dupFolder.expand = (i === index);
+      info.push(dupFolder);
+    });
+    this.setState({ details: { info, owned: this.state.details.owned } })
+  }
+
   componentDidMount() {
     const script = document.createElement('script');
 
@@ -101,9 +144,12 @@ class App extends React.Component {
             });
             $('.sticker').off('click');
             $('.sticker').on('click', e => {
+              const getItemResult = this.getItem($('.bk-page .bb-bookblock>.bb-item:visible').prevAll().length, parseInt($(e.currentTarget).attr('data-id')));
+              console.log('getItemResult', getItemResult);
               this.setState({
                 details: {
-                  owned: $(e.currentTarget).hasClass('valid')
+                  owned: $(e.currentTarget).hasClass('valid'),
+                  info: getItemResult.info
                 }
               });
 
@@ -179,7 +225,7 @@ class App extends React.Component {
   }
 
   render() {
-    return <Book owned={this.state.details.owned} pages={this.state.pages} />;
+    return <Book details={this.state.details} expandFolder={index => this.expandInfo(index)} pages={this.state.pages} />;
   }
 }
 

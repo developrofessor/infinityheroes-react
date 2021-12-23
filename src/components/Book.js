@@ -12,7 +12,7 @@ class Book extends React.Component {
                             <div className="wrapper-square-dummy"></div>
                             <div className="wrapper-square-element">
                                 <div className="bk-book bk-viewinside book">
-                                    <BookCover owned={!!this.props.owned} />
+                                    <BookCover expandFolder={index => this.props.expandFolder(index)} details={this.props.details} />
                                     <div className='bk-page'>
                                         <div className='bb-bookblock'>
                                             {this.props.pages.map((page, i) => (
