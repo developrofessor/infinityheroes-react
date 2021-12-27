@@ -53,7 +53,7 @@ class Landing extends React.Component {
             element: swapButton,
             method: 'click',
             handler: () => {
-                window.location.href = 'https://traderjoexyz.com/#/trade?inputCurrency=0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7&outputCurrency=0xdb4f2785b30143e4aee78a6c59276af1ee971044';
+                window.open('https://traderjoexyz.com/#/trade?inputCurrency=0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7&outputCurrency=0xdb4f2785b30143e4aee78a6c59276af1ee971044', '_blank');
             }
         };
         swapButton.addEventListener('click', this.listeners.swapButtonHandler.handler);
