@@ -4,6 +4,19 @@ body {
     animation: none;
 }
 
+.social-icons .icon {
+    color: #FFF;
+    text-shadow: 0 .2pc #0005;
+    font-size: 5vmin;
+    padding: 5pt;
+    display: inline-block;
+}
+
+.social-icons .icon a {
+    background: none;
+    color: #FFF;
+}
+
 .landing,
 .documents {
     width: 100%;
@@ -68,7 +81,7 @@ body {
     font-size: calc(8vmin + 8vmax);
     width: 100%;
     text-align: center;
-    margin: 10vmin auto 5vmin auto;
+    margin: 5vmin auto 5vmin auto;
     font-family: 'Indiana-Jonas', sans-serif;
     color: #FFF;
     position: relative;
@@ -96,7 +109,7 @@ body {
 }
 
 .images {
-    margin-top: 10vmin;
+    margin-top: 7vmin;
     position: relative
 }
 
@@ -126,8 +139,19 @@ body {
 
 .landing .content {
     width: 100%;
-    margin: 5vmin auto;
+    margin: 2vmin auto;
     text-align: center;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #FFF;
+    border-radius: 5vmin;
+    padding: 32px;
 }
 
 @keyframes floatingText {

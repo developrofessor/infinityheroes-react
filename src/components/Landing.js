@@ -1,11 +1,16 @@
 import '../Landing.css';
 import React from 'react';
 import TypingText from './TypingText.js';
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 
 class Landing extends React.Component {
     constructor() {
         super();
         this.listeners = {};
+        this.state = {
+            showContract: false
+        }
     }
     componentDidMount() {
         const documents = document.querySelector('.documents');
@@ -74,6 +79,34 @@ class Landing extends React.Component {
             <>
                 <div className="landing">
                     <TypingText className="title" text="Infinity heroes" />
+                    <div className="social-icons">
+                        <div className="icon">
+                            <a
+                                href="https://discord.gg/5egkHVvzMg"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <i className="fab fa-discord"></i>
+                            </a>
+                        </div>
+                        <div className="icon">
+                            <a
+                                href="https://t.me/versetokenpresale"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <i className="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                        <div
+                            className="icon"
+                            onClick={() => this.setState({ showContract: true })}
+                        >
+                            <a href="javascript:void(0)">
+                                <i className="fas fa-file-contract"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div className="content">
                         <button className="btn" id="documentsButton">Documents</button>
                         <button className="btn success" id="swapButton">Swap</button>
@@ -94,7 +127,7 @@ class Landing extends React.Component {
                                 <div style={{ backgroundImage: 'url(' + require('../images/characters/5.png').default + ')' }}></div>
                             </div>
                             <div className="image">
-                                <div style={{ backgroundImage: 'url(' + require('../images/characters/6.png').default + ')'}}></div>
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/6.png').default + ')' }}></div>
                             </div>
                             <div className="image">
                                 <div style={{ backgroundImage: 'url(' + require('../images/characters/7.png').default + ')' }}></div>
@@ -160,6 +193,20 @@ class Landing extends React.Component {
                         Made by <a href="https://www.instagram.com/professor.dev/" target="_blank">Professor</a>
                     </div>
                 </div>
+                <Modal
+                    open={this.state.showContract}
+                    onClose={() => this.setState({ showContract: false })}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                >
+                    <Box className="popup">
+                        <h2>Contracts</h2>
+                        <a href="https://snowtrace.io/token/0xdb4f2785b30143e4aee78a6c59276af1ee971044" target="_blank">
+                            <i class="fas fa-file-contract"></i> Verse Token
+                            Contract
+                        </a>
+                    </Box>
+                </Modal>
             </>
         );
     }
