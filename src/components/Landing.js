@@ -135,6 +135,30 @@ class Landing extends React.Component {
                             <div className="image">
                                 <div style={{ backgroundImage: 'url(' + require('../images/characters/8.png').default + ')' }}></div>
                             </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/9.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/10.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/11.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/12.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/13.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/14.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/15.png').default + ')' }}></div>
+                            </div>
+                            <div className="image">
+                                <div style={{ backgroundImage: 'url(' + require('../images/characters/16.png').default + ')' }}></div>
+                            </div>
                         </div>
                     </div>
                 </div>

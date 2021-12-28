@@ -31,7 +31,7 @@ body {
     display: none;
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 1s, transform .5s;
-    z-index: 9;
+    z-index: 99999;
     background-image: linear-gradient(#4c96b1b5, #967adcd9) ,url(./images/documents_bg.jpg);
     background-size: cover;
     background-position: center;
