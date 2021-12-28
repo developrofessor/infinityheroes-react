@@ -6,13 +6,17 @@ const initializeGallery = gallery => {
     function scaleImages() {
         for (let i = selectedImage; i < images.length; i++) {
             const scale = 1 - (i - selectedImage) / (images.length) / 2;
+            const opacity = 1 - (i - selectedImage) / images.length;
             images[i].style.transform = 'scale(' + scale + ')';
             images[i].style.zIndex = 1 - (i - selectedImage - images.length);
+            images[i].style.opacity = opacity;
         }
         for (let i = 0; i < selectedImage; i++) {
             const scale = 1 + (i - selectedImage) / (images.length) / 2;
+            const opacity = 1 + (i - selectedImage) / images.length;
             images[i].style.transform = 'scale(' + scale + ')';
             images[i].style.zIndex = images.length + 1 + (i - selectedImage);
+            images[i].style.opacity = opacity;
         }
     }
 
