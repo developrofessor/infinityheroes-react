@@ -202,7 +202,7 @@ class Landing extends React.Component {
                             <br />
                             <p>The VERSE TOKEN can be used on the INFINITY VERSE platform.</p>
                             <br />
-                            <p>FUTURE DEVELOPING - DEX 3D VERSE AND BRIDGE</p>
+                            <p>FUTURE DEVELOPING - DEX 3D DAO AND BRIDGE</p>
                         </div>
                     </div>
                     <div className="back-button">
