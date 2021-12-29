@@ -109,7 +109,7 @@ class Landing extends React.Component {
                     </div>
                     <div className="content">
                         <button className="btn" id="documentsButton">Documents</button>
-                        <button className="btn success" id="swapButton">Swap</button>
+                        <button className="btn success" id="swapButton">Connect</button>
                         <div className="images">
                             <div className="image">
                                 <div style={{ backgroundImage: 'url(' + require('../images/characters/1.png').default + ')' }}></div>
@@ -202,7 +202,7 @@ class Landing extends React.Component {
                             <br />
                             <p>The VERSE TOKEN can be used on the INFINITY VERSE platform.</p>
                             <br />
-                            <p>FUTURE DEVELOPING - DEX 3D DAO AND BRIDGE</p>
+                            <p>FUTURE DEVELOPING - DEX GAME AND BRIDGE</p>
                         </div>
                     </div>
                     <div className="back-button">
