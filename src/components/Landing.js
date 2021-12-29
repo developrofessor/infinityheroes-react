@@ -166,16 +166,14 @@ class Landing extends React.Component {
                     <div>
                         <div className="title">Documents</div>
                         <div className="content">
-                            <p>Infinity Heroes are here! the 8 Heroes are coming to AVAX.</p>
+                            <p>Infinity Heroes are here! the 16 Heroes are coming to AVAX.</p>
                             <p>If you are able to gather a full page in the Infinity Hero comic you are able to have the physical artwork sent directly to you!</p>
                             <p>as well as be the holder of the full page in the NFT.</p>
                             <p>we will also offer Infinuty Hero merchandise in our physical shop!</p>
                             <br />
                             <p>Every new mint will be 8 NFTS at the time og each MINT</p>
 
-                            <p><b>THE INFINITY HEROES MARKETPLACE</b> is a ecosystem created to elevate the community.</p>
-                            <p>This ecosystem's core purpose and objective is to offer everyone involved a opportunity to join us in this unique journey.</p>
-                            <p>This journey includes a U.I system that is originally made from us.</p>
+                            <p><b>THE INFINITY HEROES MARKETPLACE</b> is an ecosystem created to elevate the community.</p>
                             <br />
                             <p><u>U.I Functionalities</u></p>
                             <p>- Original comic book NFTs.<br />
@@ -189,24 +187,21 @@ class Landing extends React.Component {
                             <br />
                             <p><u>Verse Token</u></p>
                             <p>- Total Supply = 5 million<br />
-                                - 100K verse TOKEN'S IN PRESALE WILL BE A RATIO of 1:1. PRESALE PRICE = $1 PER VERSE TOKEN. Presale Holders will gain early access to the farm and the physical shop.<br />
-                                - 10% locked supply for 4 months totaling 500k verse tokens. Once the 4 months has passed from the initial launch, 50k verse tokens will be burned and 50k verse tokens will be airdropped. 5,000 verse tokens will be given to OG holders of the Infinity Stoners collection. 5,000 verse tokens will be given to OG holders of the Infinity Citizens collection. 20,000 verse tokens will be airdropped to the whole community. 4,000 verse tokens will be airdropped to the first 8 holders of the comic book NFTs. 16,000 verse tokens will be given overtime in portions to participents in the community chats.<br />
+                                - 10% locked supply for 6 months totaling 500k verse tokens. Once the 6 months has passed from the initial launch, 50k verse tokens will be burned and 50k verse tokens will be airdropped to the  16 holders of the comic book NFTs.  verse tokens will be given overtime in portions to participents in the community chats.<br />
                                 - Fee free/tax free token<br />
-                                - 0% farm<br />
-                                - A portion of the proceedings from the physical shop will be used as a buy back mechanism.</p>
+                                - 0% farm deposit fee<br />
+                                - Up to 65%  of the proceedings from the physical shop will be used as a buy back mechanism.</p>
                             <br />
                             <p><u>Marketplace features</u></p>
                             <p>- Farm<br />
                                 - NFTs<br />
-                                - Physical Item Shop</p>
+                                - Physical Item Shop<br />
+                                - Collector's store</p>
                             <br />
-                            <p><b>Platform launch date: 12/20/2021</b></p>
-                            <p><b>NFT launch date: 12/20/2021</b></p>
-                            <p><b>Farm launch date: 12/20/2021</b></p>
                             <br />
                             <p>The VERSE TOKEN can be used on the INFINITY VERSE platform.</p>
                             <br />
-                            <p>FUTURE DEVELOPING –DEX 3D VERSE AND BRIDGE</p>
+                            <p>FUTURE DEVELOPING - DEX 3D VERSE AND BRIDGE</p>
                         </div>
                     </div>
                     <div className="back-button">
