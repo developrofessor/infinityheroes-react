@@ -1,6 +1,8 @@
 import '../Landing.css';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import TypingText from './TypingText.js';
+import Book from './Book';
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
@@ -109,7 +111,7 @@ class Landing extends React.Component {
                     </div>
                     <div className="content">
                         <button className="btn" id="documentsButton">Documents</button>
-                        <button className="btn success" id="swapButton">Connect</button>
+                        <button className="btn success" id="swapButton">Swap</button>
                         <div className="images">
                             <div className="image">
                                 <div style={{ backgroundImage: 'url(' + require('../images/characters/1.png').default + ')' }}></div>
