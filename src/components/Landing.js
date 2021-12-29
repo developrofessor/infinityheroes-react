@@ -187,7 +187,8 @@ class Landing extends React.Component {
                             <br />
                             <p><u>Verse Token</u></p>
                             <p>- Total Supply = 5 million<br />
-                                - 10% locked supply for 6 months totaling 500k verse tokens. Once the 6 months has passed from the initial launch, 50k verse tokens will be burned and 50k verse tokens will be airdropped to the  16 holders of the comic book NFTs.  verse tokens will be given overtime in portions to participents in the community chats.<br />
+                                - 10% locked supply for 6 months.<br />
+                                - Once the 6 months has passed from the initial launch, 50k verse tokens will be burned and 50k verse tokens will be airdropped to the NFT holders and the community.<br />
                                 - Fee free/tax free token<br />
                                 - 0% farm deposit fee<br />
                                 - Up to 65%  of the proceedings from the physical shop will be used as a buy back mechanism.</p>
