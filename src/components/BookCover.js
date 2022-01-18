@@ -18,9 +18,7 @@ class BookCover extends React.Component {
                                 </button>
                             </> :
                             <>
-                                <button className="btn">
-                                    <div>Sell</div>
-                                </button>
+                                <span style={{color: '#FFF'}}>The NFT is not listed yet</span>
                             </>}
                     </div>
                     <div className="folders">

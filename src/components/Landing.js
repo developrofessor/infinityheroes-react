@@ -1,10 +1,10 @@
-import '../Landing.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TypingText from './TypingText.js';
-import Book from './Book';
+
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { Helmet } from 'react-helmet';
 
 class Landing extends React.Component {
     constructor() {
@@ -77,6 +77,8 @@ class Landing extends React.Component {
     }
 
     render() {
+        require('../App.css');
+        require('../Landing.css');
         return (
             <>
                 <div className="landing">
