@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Landing from './components/Landing';
@@ -8,13 +8,19 @@ import NotFound from './components/NotFound';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/book" element={<App />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </BrowserRouter>,
+  <React.StrictMode>
+    <Router basename="/">
+      <Switch>
+        <Route exact path='/'>
+          <Landing />
+        </Route>
+        <Route path='/book'>
+          <App />
+        </Route>
+        <Route component={<NotFound />} />
+      </Switch>
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
